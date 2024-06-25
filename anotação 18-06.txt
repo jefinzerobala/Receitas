@@ -1,0 +1,71 @@
+-documentos 
+-criar pasta
+-dentro da pasta abrir o PowerShell ou o pront de comando(só colar cmd na barra de pesquisa) 
+ 
+---------- NO POWER SHELL ----------------
+
+- npm create vite@latest 
+- esolhe o nome no meu caso foi "applikes"
+- escolhe "React" 
+- Depois escolhe "JavaScript"  
+
+
+---------- NO VScode-----------------
+
+- abre a pasta "applikes"
+- abre o terminal e coloca "npm i" e enter 
+- escreve "npm run dev"
+- pressiona Ctrl  e clica no hiperlink do 'Local'
+
+- src --> App.jsx , dai apaga oq tem em "return"
+- src só vai ficar a 'APP.jsx' e 'main.jsx' o resto apaga
+
+- assets --> exclui a imagem
+- publiic --> exclui a imagem
+- main.jsx apaga o "import.index.css"
+
+
+- App.jsx só vai ficar isso:
+	function App() {
+  	return (
+  	<h1>Etec Cidade do Livro</h1>
+  	)}
+
+export default App
+
+/////////////////////////////////
+
+- em src cria um novo arquivo chamado "Post.jsx"
+
+-em Post jsx :
+	function Post(){
+    	return <p>Teste</p>
+	}
+
+	export default Post;
+
+///////////////////////////
+
+
+-em App.jsx:
+import Post from "./Post"
+
+	function App() {
+  	return (
+  	<Post/>  
+  	)
+	}
+	export default App
+
+
+
+
+
+
+
+//////////////////////////////////
+
+
+Todo componente deve ser criado em Maiúsculo "Post" 
+
+
